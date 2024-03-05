@@ -1,3 +1,22 @@
+## TODO
+- Make sure the following are not exposed:
+```
+KV_URL
+KV_REST_API_URL
+KV_REST_API_TOKEN
+KV_REST_API_READ_ONLY_TOKEN
+```
+- Store everything encrypted
+- Put a login page
+- Create endpoints
+
+## API Testing
+```
+curl 'http://localhost:3000/api/records' -X POST \
+  -d '{"identifier": "curl", "message": "curl test message"}'
+```
+
+# NextJS README
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
